@@ -3,12 +3,12 @@ const feedPageRoute = 'Modules/FeedPage';
 
 const routes = {
   '/': {
-    html: mainPageRoute + '/main.html',
-    js: mainPageRoute + '/main.js',
+    html: mainPageRoute + '/mainPage.html',
+    js: mainPageRoute + '/mainPage.js',
   },
   '/feed': {
-    html: feedPageRoute + 'feed.html',
-    js: feedPageRoute + 'feed.js',
+    html: feedPageRoute + 'feedPage.html',
+    js: feedPageRoute + 'feedPage.js',
   },
 };
 
