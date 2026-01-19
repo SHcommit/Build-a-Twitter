@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', 'Sans-serif';
+}
+
+/* default font size is 16px */
+html {
+  /* 10px / 16px = .625 * 100 */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f0f8fd;
+}
