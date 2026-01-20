@@ -49,7 +49,7 @@
 
 /*
   label에 absolute 주는 순간, right-content-form 자체가 flex인데
-  flex 안에 그 compoenent 배제됨.
+  flex 안에 그 component 배제됨.
   div가 label의 새로운 위치 기준점이 되어버린다.
 */
 .right-content-form div {
