@@ -1,4 +1,4 @@
-const devRoute = '/login';
+const devRoute = '/feed';
 
 const mainPageRoute = './Modules/MainPage';
 const feedPageRoute = './Modules/FeedPage';
@@ -24,7 +24,7 @@ const appContainer = document.getElementById('app');
 /// url 해시에 따라서 페이지 렌더링
 const renderPage = async () => {
   const path = window.location.hash.replace('#', '') || '/';
-  
+
   const route = devRoute ? routes[devRoute] : routes[path];
 
   if (!route) {
