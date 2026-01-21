@@ -165,7 +165,7 @@
   border-color: #1aa1f5;
 }
 
-.feeds-tweet {
+.feed-posts {
   grid-column: 2/3;
   grid-row: 2/3;
   background-color: green;
