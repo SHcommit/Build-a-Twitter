@@ -36,14 +36,17 @@ const renderPage = async () => {
   const response = await fetch(route.html);
   const htmlText = await response.text();
 
+  /// DocumentFragment와 replaceChildren 사용해서 DOM 업뎃
   /// innerHTML 안 쓸거임
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlText, 'text/html');
 
-  appContainer.innerHTML = '';
+  const fragment = document.createDocumentFragment();
   doc.body.childNodes.forEach((node) => {
-    appContainer.appendChild(node.cloneNode(true));
+    fragment.appendChild(node.cloneNode(true));
   });
+
+  appContainer.replaceChildren(fragment);
 
   if (route.js) {
     try {
