@@ -1,4 +1,5 @@
-const devRoute = '/feed';
+// const devRoute = '/feed';
+const devRoute = null;
 
 const mainPageRoute = './Modules/MainPage';
 const feedPageRoute = './Modules/FeedPage';
