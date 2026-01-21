@@ -1,5 +1,8 @@
-const mainPageRoute = 'Modules/MainPage';
-const feedPageRoute = 'Modules/FeedPage';
+const devRoute = '/login';
+
+const mainPageRoute = './Modules/MainPage';
+const feedPageRoute = './Modules/FeedPage';
+const loginPageRoute = './Modules/LoginPage';
 
 const routes = {
   '/': {
@@ -7,8 +10,12 @@ const routes = {
     js: mainPageRoute + '/mainPage.js',
   },
   '/feed': {
-    html: feedPageRoute + 'feedPage.html',
-    js: feedPageRoute + 'feedPage.js',
+    html: feedPageRoute + '/feedPage.html',
+    js: feedPageRoute + '/feedPage.js',
+  },
+  '/login': {
+    html: loginPageRoute + '/loginPage.html',
+    js: loginPageRoute + '/loginPage.js',
   },
 };
 
@@ -17,7 +24,8 @@ const appContainer = document.getElementById('app');
 /// url 해시에 따라서 페이지 렌더링
 const renderPage = async () => {
   const path = window.location.hash.replace('#', '') || '/';
-  const route = routes[path];
+  
+  const route = devRoute ? routes[devRoute] : routes[path];
 
   if (!route) {
     appContainer.innerHTML = '<h1>404 - Page Not Found...</h1>';
@@ -49,5 +57,5 @@ const renderPage = async () => {
   }
 };
 
-window.addEventListener('hashChange', renderPage);
+window.addEventListener('hashchange', renderPage);
 window.addEventListener('load', renderPage);
