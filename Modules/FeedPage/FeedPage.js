@@ -49,10 +49,12 @@ const disableModalPostButtons = () => changeModalPostButtonsOpacity(0.65);
 // MARK: - bind
 function bind() {
   querySelector('.post-btn').addEventListener('click', handlePostButton);
+
   querySelector('.modal-header i').addEventListener(
     'click',
     handlePostModelCloseButton,
   );
+
   querySelector('.modal-input').addEventListener(
     'input',
     handlePostModalInputStream,
@@ -62,6 +64,21 @@ function bind() {
     if (e.target.value.trim() === '') {
       disableModalPostButtons();
     }
+  });
+
+  const sidebar = querySelector('.sidebar');
+  const sidebarWrapper = querySelector('.sidebar-wrapper');
+
+  const userProfileSideMenu = querySelector('.user-profile');
+  userProfileSideMenu.addEventListener('click', () => {
+    sidebar.classList.add('sidebar-display');
+    sidebarWrapper.classList.add('sidebar-wrapper-display');
+  });
+
+  const sidebarCloseButton = querySelector('.sidebar-header i');
+  sidebarCloseButton.addEventListener('click', () => {
+    sidebar.classList.remove('sidebar-display');
+    sidebarWrapper.classList.remove('sidebar-wrapper-display');
   });
 }
 
