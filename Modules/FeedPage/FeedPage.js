@@ -83,9 +83,34 @@ function bind() {
 
   const darkModeToggle = querySelector('.dark-mode-toggle');
   const darkModeConverter = querySelector('.circle');
+
+  const darkElements1 = document.querySelectorAll('.dark-mode-1');
+  const darkElements2 = document.querySelectorAll('.dark-mode-2');
+  const lightTexts = document.querySelectorAll('.light-text');
+  const borders = document.querySelectorAll('.border');
+
   darkModeToggle.addEventListener('click', () => {
     /// 없으면 추가, 있으면 제거(토글느낌)
     darkModeConverter.classList.toggle('move');
+    /// iOS에선 색만 지정하면 시스템에서 자동으로 해주는데..
+    /// 1.부모를 바꾸자. 자식은 색  정의 안했다.
+    /// toggle은 덮어씌우고, 또 toggle하면 해제하면서 원래 지정된 요소의 스타일이 적용됨. 굿
+    Array.from(darkElements1).map((darkElem) => {
+      darkElem.classList.toggle('dark-1');
+    });
+
+    Array.from(darkElements2).map((darkElem) => {
+      darkElem.classList.toggle('dark-2');
+    });
+
+    /// 와우.. 클래스명은 light-text로 하고 실제로 토글 줄 때는 light style로 바꿔버리는거
+    Array.from(lightTexts).map((lightText) => {
+      lightText.classList.toggle('light');
+    });
+
+    Array.from(borders).map((border) => {
+      border.classList.toggle('border-color');
+    });
   });
 }
 
