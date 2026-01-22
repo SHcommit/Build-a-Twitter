@@ -80,6 +80,13 @@ function bind() {
     sidebar.classList.remove('sidebar-display');
     sidebarWrapper.classList.remove('sidebar-wrapper-display');
   });
+
+  const darkModeToggle = querySelector('.dark-mode-toggle');
+  const darkModeConverter = querySelector('.circle');
+  darkModeToggle.addEventListener('click', () => {
+    /// 없으면 추가, 있으면 제거(토글느낌)
+    darkModeConverter.classList.toggle('move');
+  });
 }
 
 // MARK: - Entry
