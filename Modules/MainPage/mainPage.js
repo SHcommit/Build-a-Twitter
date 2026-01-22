@@ -1,3 +1,5 @@
+import { showAlert } from '../CommonUI/alert.js';
+
 const routes = {
   feed: '/feed',
   signUp: '/',
@@ -32,6 +34,9 @@ const handleLogin = () => {
 
   if (!isValidatedUser(inputUserInfo.value, inputPassword.value)) {
     navigate(routes.logIn);
+    showAlert(
+      'The username and password you entered did not match our records.\n Please double-check and try again.'
+    );
     return;
   }
 
