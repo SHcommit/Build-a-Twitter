@@ -1,0 +1,27 @@
+.alert {
+  position: fixed;
+  top: 11.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0 0 0.7rem 0.7rem;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.alert i {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.3rem;
+  color: #868383;
+  cursor: pointer;
+}
+
+.alert p {
+  margin: 2rem 1rem 0 1rem;
+  font-size: 1.6rem;
+  color: #868383;
+}
