@@ -21,3 +21,15 @@ row는 1,2,3인데
 1/2에는 home
 2/3에는 이제 피드(트윗 올라오는거) 로 사용하겠다. min-content니까
 이때 피드 트윗은 동적으로 트윗이 증가하면 그 사이즈만큼 min-content니까 레이아웃 잡겠다.
+
+---
+
+alert, sidebar과 같은거 보여줄 때 원래 컨텐츠 컴포넌트 wrapper로 해서 배경색 바꾸는 방식.
+
+---
+
+컴포넌트에 width: 100rem지정한 후에,
+padding: 2.5rem을 하면 
+기본적으로 box-sizing: content-box라서 컨텐츠 밖으로 패딩이 적용됨.
+
+box-sizing: border-box로 하면 지정된 width 내부에서 padding적용됨
