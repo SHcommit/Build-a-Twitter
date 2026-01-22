@@ -14,3 +14,23 @@ html {
 body {
   background-color: #f0f8fd;
 }
+
+/* 
+  dark mode 
+  다크모드할 때 토글 방식도 좋은데 CSS변수를 활용하자.
+*/
+.dark-1 {
+  background-color: #1c2938 !important;
+}
+
+.dark-2 {
+  background-color: #10171e !important;
+}
+
+.light {
+  color: #fff !important;
+}
+
+.border-color {
+  border-color: #444 !important;
+}
