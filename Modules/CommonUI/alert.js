@@ -1,11 +1,11 @@
-const currentAlertElement = null;
+let currentAlertElement = null;
 
-export function showAlert(message, duration = 4000) {
+export function showAlert(message, duration = 3000) {
   if (currentAlertElement) {
     currentAlertElement.remove();
   }
 
-  fetch('/Modules/CommonUI/alert.html')
+  fetch('./Modules/CommonUI/alert.html')
     .then((response) => {
       if (!response.ok) throw new Error("Can't find the alert.html");
       return response.text();
