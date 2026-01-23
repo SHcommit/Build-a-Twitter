@@ -25,3 +25,21 @@
   font-size: 1.6rem;
   color: #868383;
 }
+
+@media (max-width: 1100px) {
+  .alert {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .alert {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .alert {
+    width: 40rem;
+  }
+}
