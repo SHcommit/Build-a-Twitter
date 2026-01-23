@@ -399,6 +399,7 @@
   width: 4rem;
   height: 4rem;
   margin-right: 1.5rem;
+  flex-shrink: 0;
 }
 
 .modal-image-wrapper img {
@@ -674,3 +675,340 @@
 }
 
 /* end of darkmode */
+
+/* responsive */
+@media (max-width: 1100px) {
+  .search-bar-input {
+    width: 30rem;
+  }
+
+  .feeds-content {
+    grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+  }
+
+  .feed-follow {
+    display: none;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .header-post i {
+    font-size: 2rem;
+  }
+
+  /* .feeds-header {
+  }
+  */
+
+  .header-top h4 {
+    font-size: 2rem;
+  }
+
+  .header-img-wrapper {
+    width: 3.7rem;
+    height: 3.7rem;
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+  }
+
+  .icons a {
+    margin-right: 3rem;
+    font-size: 2rem;
+  }
+
+  .user-profile {
+    margin-left: 2rem;
+  }
+
+  .user-img-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .user-profile a,
+  .user-profile i {
+    font-size: 1.5rem;
+  }
+  .user-name-link {
+    margin: 0 0.5rem;
+  }
+
+  .post-btn {
+    left: 87%;
+    width: 10rem;
+    padding: 0.8rem 0rem;
+    font-size: 1.5rem;
+  }
+
+  .user-avatar-wrapper {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .modal {
+    width: 45rem;
+    border-radius: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .search-bar-input {
+    width: 18rem;
+  }
+
+  .post-btn {
+    left: auto;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .user-avatar-wrapper {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .icons a {
+    margin-right: 1.7rem;
+    font-size: 2rem;
+  }
+
+  .user-profile {
+    margin-left: 1.2rem;
+  }
+
+  .header-post input {
+    width: 100%;
+    flex-shrink: 1;
+  }
+
+  .post-img {
+    width: 38rem;
+    height: 25rem;
+  }
+
+  .post-icons i {
+    font-size: 1.4rem;
+    margin-right: 4rem;
+  }
+
+  .post-text {
+    font-size: 1.4rem;
+    flex-shrink: 2;
+    width: 38rem;
+  }
+
+  .post {
+    box-sizing: border-box;
+  }
+
+  .header-img-wrapper {
+    flex-shrink: 0;
+  }
+
+  .modal-header i {
+    font-size: 1.8rem;
+  }
+
+  .modal-header button {
+    font-size: 1.4rem;
+    width: 6.5rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .modal {
+    width: 37rem;
+  }
+
+  .modal-input {
+    width: 30rem;
+    padding: 1.2rem 1.2rem 7.5rem 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .modal-image-wrapper {
+    margin-right: 0.5rem;
+  }
+
+  .modal-icons {
+    gap: 0.5rem;
+  }
+
+  .modal-body i {
+    bottom: 5.5rem;
+    font-size: 1.6rem;
+    right: 1.5rem;
+  }
+
+  .modal-icons i {
+    font-size: 2rem;
+  }
+
+  .modal-icons span {
+    font-size: 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .modal-footer {
+    padding: 0.3rem 0.8rem 1.5rem 5rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .modal-header {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .icons a {
+    margin-right: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  .search-bar-input {
+    width: 12rem;
+    padding-left: 3.5rem;
+  }
+
+  .post-img {
+    width: 33rem;
+    height: 20rem;
+  }
+
+  .post-text {
+    width: 33rem;
+  }
+
+  .search-bar > i {
+    left: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .feeds-nav {
+    height: 5.5rem;
+  }
+
+  .icons a {
+    margin-right: 1.4rem;
+    font-size: 1.8rem;
+  }
+
+  .search-bar-input {
+    width: 11rem;
+  }
+
+  .user-name-link {
+    display: none;
+  }
+
+  .feeds-content {
+    grid-template-columns: 1fr;
+    padding-top: 5.5rem;
+  }
+
+  .feeds-header,
+  .feed-posts {
+    grid-column: 1 / -1;
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .feeds-header {
+    margin-bottom: 1rem;
+  }
+
+  .post {
+    padding: 1.2rem;
+  }
+  .user-avatar-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .post-img {
+    width: 100%;
+    height: auto;
+
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+  }
+  .post-text,
+  .post-user-info h4,
+  .post-user-info span,
+  .post-user-info p {
+    font-size: 1.4rem;
+  }
+  .post-icons i {
+    margin-right: 1rem;
+  }
+
+  .post-btn {
+    left: auto;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 7rem;
+    height: 3.3rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal {
+    width: 30rem;
+  }
+
+  .modal-input {
+    width: 28rem;
+    padding: 1.2rem 1.2rem 7.5rem 1.2rem;
+  }
+
+  .modal-body i {
+    bottom: 5.5rem;
+    font-size: 1.6rem;
+    right: 1rem;
+  }
+
+  .modal-icons i {
+    font-size: 2rem;
+  }
+
+  .modal-icons span {
+    font-size: 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .header-post input {
+    width: 15rem;
+  }
+
+  .icons a {
+    margin-right: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .header-top h4 {
+    font-size: 1.8rem;
+  }
+
+  .header-top i {
+    font-size: 1.8rem;
+  }
+
+  .post-text {
+    flex-shrink: 2;
+    width: 26rem;
+  }
+  .header-post i {
+    font-size: 1.6rem;
+    margin: 0.7rem;
+  }
+}
+
+/* end of responsive */
