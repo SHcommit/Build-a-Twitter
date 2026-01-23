@@ -803,6 +803,62 @@
   .header-img-wrapper {
     flex-shrink: 0;
   }
+
+  .modal-header i {
+    font-size: 1.8rem;
+  }
+
+  .modal-header button {
+    font-size: 1.4rem;
+    width: 6.5rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .modal {
+    width: 37rem;
+  }
+
+  .modal-input {
+    width: 30rem;
+    padding: 1.2rem 1.2rem 7.5rem 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .modal-image-wrapper {
+    margin-right: 0.5rem;
+  }
+
+  .modal-icons {
+    gap: 0.5rem;
+  }
+
+  .modal-body i {
+    bottom: 5.5rem;
+    font-size: 1.6rem;
+    right: 1.5rem;
+  }
+
+  .modal-icons i {
+    font-size: 2rem;
+  }
+
+  .modal-icons span {
+    font-size: 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .modal-footer {
+    padding: 0.3rem 0.8rem 1.5rem 5rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .modal-header {
+    padding: 1rem 1rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -899,6 +955,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .modal {
+    width: 30rem;
+  }
+
+  .modal-input {
+    width: 28rem;
+    padding: 1.2rem 1.2rem 7.5rem 1.2rem;
+  }
+
+  .modal-body i {
+    bottom: 5.5rem;
+    font-size: 1.6rem;
+    right: 1rem;
+  }
+
+  .modal-icons i {
+    font-size: 2rem;
+  }
+
+  .modal-icons span {
+    font-size: 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
   }
 }
 
